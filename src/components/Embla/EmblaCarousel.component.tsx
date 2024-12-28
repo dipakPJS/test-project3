@@ -8,7 +8,7 @@ import { EmblaProvider}  from "../../context/EmblaContext"
  
 import "./embla.styles.css";
  
-import Image from "next/image";
+ 
 
 import EmblaControls from "./EmblaControls.component";
 

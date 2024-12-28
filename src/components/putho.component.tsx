@@ -1,28 +1,12 @@
-"use client";
+"use client"
+import dynamic from "next/dynamic";
 
-import { useEffect, useState } from "react";
-import backgroundLottie from "../../public/background.json";
-import { LottieComponentProps } from "lottie-react";
+const BackgroundAnimation = dynamic(() => import("./BackgroundLottie.component"), { ssr: false });
 
-let Lottie: React.ComponentType<LottieComponentProps> | null = null;
-
-export default function Putho() {
-    const [isClient, setIsClient] = useState(false);
-
-    useEffect(() => {
-        // Dynamically import Lottie only on the client
-        import("lottie-react").then((module) => {
-            Lottie = module.default;
-            setIsClient(true);
-        });
-    }, []);
-
+export default function putho() {
     return (
-        <div className="h-full w-full bg-black">
-            <p className="text-5xl text-white">This is dipak</p>
-            {isClient && Lottie && (
-                <Lottie animationData={backgroundLottie} className="h-full w-full" />
-            )}
+        <div className="w-full h-full">
+<BackgroundAnimation />
         </div>
-    );
+    )
 }

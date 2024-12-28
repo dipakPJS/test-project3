@@ -36,8 +36,9 @@ export default function Home() {
 </div>
 <div className="w-full bg-green-600 h-[100vh]">
  <MainContactFormComponent />
- <CgArrowTopLeftO />
+ <CgArrowTopLeftO className="text-5xl text-[red]"/>
 </div>
+<div className="w-full h-[100vh] bg-[black]"></div>
     </div>
   );
 }

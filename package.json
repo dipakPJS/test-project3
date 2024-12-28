@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lenis": "^1.1.18",
     "lottie-react": "^2.4.0",
     "lottie-web": "^5.12.2",
     "next": "15.1.3",

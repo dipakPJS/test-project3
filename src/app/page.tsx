@@ -3,6 +3,7 @@
 import Putho from "@/components/putho.component";
 import { motion } from "framer-motion";
 import { EmblaOptionsType } from "embla-carousel";
+import { CgArrowTopLeftO } from "react-icons/cg";
 
 import EmblaCarousel from "../components/Embla/EmblaCarousel.component";
 import MainContactFormComponent from "@/components/contactform/MainContactForm.component";
@@ -35,6 +36,7 @@ export default function Home() {
 </div>
 <div className="w-full bg-green-600 h-[100vh]">
  <MainContactFormComponent />
+ <CgArrowTopLeftO />
 </div>
     </div>
   );

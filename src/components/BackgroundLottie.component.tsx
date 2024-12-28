@@ -1,14 +1,15 @@
-import Lottie, { Options } from  "react-lottie"
+import Lottie from "react-lottie";
+import animationData from "../../public/background.json";
 
-const lottieOptions: Options = {
+const lottieOptions = {
   loop: true,
   autoplay: true,
-  animationData: require("../../public/background.json"),
+  animationData,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },
 };
 
-const backgroundLottie: React.FC = () => <Lottie options={lottieOptions} />;
+const BackgroundLottie: React.FC = () => <Lottie options={lottieOptions} />;
 
-export default backgroundLottie;
+export default BackgroundLottie;

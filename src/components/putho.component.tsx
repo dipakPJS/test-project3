@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import backgroundLottie from "../../public/background.json";
 
-let Lottie: any = null;
+// Use the type from the dynamically imported module
+let Lottie: React.ComponentType<{ animationData: any; className?: string }> | null = null;
 
 export default function Putho() {
     const [isClient, setIsClient] = useState(false);

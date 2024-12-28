@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { EmblaOptionsType } from "embla-carousel";
 
 import EmblaCarousel from "../components/Embla/EmblaCarousel.component";
+import MainContactFormComponent from "@/components/contactform/MainContactForm.component";
 
 const fadeInDirections = {
   top: { initial: { opacity: 0, y: -50 }, animate: { opacity: 1, y: 0 } },
@@ -31,6 +32,9 @@ export default function Home() {
 </div>
 <div className="w-full bg-blue-600 h-[100vh]">
 <EmblaCarousel options={OPTIONS}/>
+</div>
+<div className="w-full bg-green-600 h-[100vh]">
+ <MainContactFormComponent />
 </div>
     </div>
   );

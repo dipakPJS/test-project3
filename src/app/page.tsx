@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { EmblaOptionsType } from "embla-carousel";
 import { CgArrowTopLeftO } from "react-icons/cg";
 
+import Marquee from "react-fast-marquee"
+
 import EmblaCarousel from "../components/Embla/EmblaCarousel.component";
 import MainContactFormComponent from "@/components/contactform/MainContactForm.component";
 
@@ -38,7 +40,20 @@ export default function Home() {
  <MainContactFormComponent />
  <CgArrowTopLeftO className="text-5xl text-[red]"/>
 </div>
-<div className="w-full h-[100vh] bg-[black]"></div>
+<div className="w-full h-[100vh] bg-[black]">
+<Marquee
+            speed={300}
+            autoFill={true}
+            pauseOnHover={false}
+            loop={0}
+            gradient={true}
+            gradientColor="black"
+            gradientWidth={300}
+            className="h-[200px] text-white w-full"
+          >
+            This is dipak
+          </Marquee>
+</div>
     </div>
   );
 }

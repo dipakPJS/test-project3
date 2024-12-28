@@ -9,6 +9,7 @@ import Marquee from "react-fast-marquee"
 
 import EmblaCarousel from "../components/Embla/EmblaCarousel.component";
 import MainContactFormComponent from "@/components/contactform/MainContactForm.component";
+import { ShootingStarsComponent } from "@/components/ShootingStart.component";
 
 const fadeInDirections = {
   top: { initial: { opacity: 0, y: -50 }, animate: { opacity: 1, y: 0 } },
@@ -53,6 +54,11 @@ export default function Home() {
           >
             This is dipak
           </Marquee>
+</div>
+<div className="min-h-screen bg-black w-full relative">
+  <div className="absolute inset-0">
+  <ShootingStarsComponent />
+  </div>
 </div>
     </div>
   );
